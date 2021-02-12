@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simpsons Trivia</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <script src="script/script.js">
+    
+    </script>
+    
+</head>
+<body>
+    
+  
+    <!--div main container-->
+  <div class="mainContainer">
+    <h1>Welcome to Simpsons Trivia!</h1>
+    <!--div with stock picture-->
+       <!--text with intro-->   
+       <div id="indexPictureAndIntro">
+        <form>
+            <p>
+                <label for="indexUsername">Enter your username and press Enter!</label>
+            </p>
+        <!-- <form action="somefile.php"> -->
+            <input id="indexUsername"
+                type="text"
+                name="username"
+                placeholder="Username"
+                pattern="[a-z]{1,15}"
+                title="Username should only contain lowercase letters. e.g. john">
+        </form>
+        <p>
+            magna fringilla. Sodales ut etiam sit amet nisl purus. Dictum at tempor commodo ullamcorper a lacus vestibulum sed arcu. Orci porta non pulvinar neque. Id leo in vitae turpis. Vitae auctor eu augue ut lectus arcu bibendum. Purus sit amet luctus venenatis lectus. Sed vulputate mi sit amet mauris commodo quis imperdiet. Volutpat odio facilisis mauris sit amet massa vitae tortor condimentum. Sed velit digni
+        </p>
+           
+
+        </div> 
+    <!--flex box with easy and hard choices-->
+        <div id="indexFlexBox">
+    <!--div with easy question link and button to go to Easy page-->
+            <div id="indexEasyChoice">
+                
+            <h2 style="color:white">Easy</h2>
+            <br>
+            <br>
+            <button id="indexEasyButton">Woo hoo!</button>
+                <script type="text/javascript">
+                document.getElementById("indexEasyButton").onclick = function () {
+                    location.href = "./easy.html";
+                }
+                </script>
+            </div>
+    <!--div with hard question link and button to go to Hard page-->
+            <div id="indexHardChoice">
+            <h2 style="color:white">Hard</h2>
+            <br>
+            <br>
+            <button id="indexHardButton">D'oh!</button>
+            <script type="text/javascript">
+                document.getElementById("indexHardButton").onclick = function () {
+                    location.href = "./hard.html";
+                }
+                </script>
+            </div>
+        </div>
+
+    </div>
+    
+</body>
+</html>

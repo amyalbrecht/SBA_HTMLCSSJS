@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hard Simpsons Trivia</title>
+    <style>
+        div div {
+            background-color: rgb(209, 96, 96)
+        }
+    </style>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <script src="script/script.js">
+    
+    </script>
+    
+</head>
+<body>
+
+<!--div main container-->
+<div class="mainContainer">
+    <h1>Welcome to Hard Simpsons Trivia!</h1>
+    <!--div with stock picture-->
+       <!--text with intro--> 
+        <div id="hardIntro">
+
+
+        </div>
+
+    <!--Question #1 - picture and dropdown menu-->
+    <div class="questionBorder" id="hardQuestion1">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Monorail_Coral.jpg" alt="Monorail" width="200px" height="200px" />
+        <p>
+        <label for="hardQuestion1Dropdown">What was the name of the person who sold the monorail to Springfield?</label>
+        </p>
+        <p>
+        <select name="hardQuestion1Dropdown" id="hardQuestion1Dropdown">
+            <option value="">--Please choose an option--</option>
+            <option value="lyleLanley">Lyle Lanley</option>
+            <option value="bleedingGumsMurphy">Bleeding Gums Murphy</option>
+            <option value="drMarvinMonroe">Dr. Marvin Monroe</option>
+        </select>
+        <p>
+            <button id="hardSubmitButton1">Submit answer</button>
+            <script type="text/javascript">
+            document.getElementById("hardSubmitButton1").onclick = function () {
+                location.href = "#";
+            }
+            </script>
+        </p>
+    </div>
+    
+    <!--Question #2 - text field-->
+    <div class="questionBorder" id="hardQuestion2">
+        
+        
+        <p>
+            <label for="hardQuestion2Input">What name did Milhouse go by in the arcade game?</label>
+            </p>
+            <form class="form" method="post" name="formHardQuestion2" onsubmit="return validateFormHardQuestion2()">
+                <input type="text" id="hardQuestion2Input" name="hardQuestion2Input" size="7"> 
+                    <p>
+                        <button id="hardSubmitButton2">Submit answer</button>
+                    
+                    </p>
+            </form>
+
+    </div>
+
+    <!--Question #3 - video and multiple choice HTML table-->
+    <div class="questionBorder" id="hardQuestion3">
+        <div id="hardQuestionScrabble">
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="2">What was the word Bart invented in Scrabble?</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <div>
+                                <input type="radio" id="Scrabble1" name="answer" value="Scrabble1"
+                                       checked>
+                                <label for="Scrabble1">kwyjibo</label>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div>
+                                <input type="radio" id="Scrabble2" name="answer" value="Scrabble2"
+                                       unchecked>
+                                <label for="Scrabble2">eriunlkjb</label>
+                            </div>   
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div>
+                                <input type="radio" id="Scrabble3" name="answer" value="Scrabble3"
+                                       unchecked>
+                                <label for="Scrabble3">qzxyzqxy</label>
+                            </div> 
+                        </td>
+                    </tr>    
+                </tbody>
+            </table>
+        </div>
+        <p>
+            <button id="hardSubmitButton3">Submit answer</button>
+            <script type="text/javascript">
+            document.getElementById("hardSubmitButton3").onclick = function () {
+                location.href = "#";
+            }
+            </script>
+        </p>
+
+    </div>
+
+   
+
+
+<!--button that takes you back to index.html-->
+ <button id="easyHomeButton">Take me home, Smithers!</button>
+            <script type="text/javascript">
+                document.getElementById("easyHomeButton").onclick = function () {
+                    location.href = "./index.html";
+                }
+                </script>
+    
+</body>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Easy Simpsons Trivia</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <style>
+        div div {
+            background-color: cornflowerblue
+        }
+    </style>
+    <script src="script/script.js">
+    
+    </script>
+    
+</head>
+<body>
+    <!--div main container-->
+    <div class="mainContainer">
+        <h1>Welcome to Easy Simpsons Trivia!</h1>
+    <!--div with stock picture-->
+       <!--text with intro--> 
+        <div id="easyIntro">
+
+
+        </div>
+
+
+    <!--Question #1 - dropdown menu-->
+        <div class="questionBorder" id="easyQuestion1">
+            <label for="easyQuestion1Dropdown">When did Homer and Marge meet?</label>
+            <br>
+            <select name="easyQuestion1Dropdown" id="easyQuestion1Dropdown">
+                <option value="">--Please choose an option--</option>
+                <option value="highSchool">High school</option>
+                <option value="college">College</option>
+                <option value="lastWeek">Last week</option>
+            </select>
+            <p>
+                <button id="easySubmitButton1">Submit answer</button>
+                <script type="text/javascript">
+                document.getElementById("easySubmitButton1").onclick = function () {
+                    location.href = "#";
+                }
+                </script>
+            </p>
+        </div>
+
+    <!--Question #2 - text field-->
+        <div class="questionBorder" id="easyQuestion2">
+            <img src="https://i.gifer.com/F6fn.gif" alt="Principal" />
+            <p>
+            <label for="easyQuestion2Input">What is the last name of Bart and Lisa's principal?</label>
+            </p>
+            <form class="form" method="post" name="formEasyQuestion2" onsubmit="return validateFormEasyQuestion2()">
+                <input type="text" id="easyQuestion2Input" name="easyQuestion2Input" size="7"> 
+                    <p>
+                        <button id="easySubmitButton2">Submit answer</button>
+                    
+                    </p>
+            </form>
+
+        </div>
+
+    <!--Question #3 - video and multiple choice HTML table-->
+        <div class="questionBorder" id="easyQuestion3">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/NkhWJ3cn1kA" alt="Frank Grimes video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            
+            <div id="easyQuestionGrimes">
+                <table>
+                    <thead>
+                        <tr>
+                            <th colspan="2">How did Frank Grimes meet his untimely end?</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div>
+                                    <input type="radio" id="electrocution" name="answer" value="electrocution"
+                                           checked>
+                                    <label for="electrocution">Accidental electrocution</label>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div>
+                                    <input type="radio" id="lobster" name="answer" value="lobster"
+                                           unchecked>
+                                    <label for="lobster">Allergic to lobster served at Simpson house</label>
+                                </div>   
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div>
+                                    <input type="radio" id="acid" name="answer" value="acid"
+                                           unchecked>
+                                    <label for="acid">Fell in vat of acid</label>
+                                </div> 
+                            </td>
+                        </tr>    
+                    </tbody>
+                </table>
+                <p>
+                    <button id="easySubmitButton3">Submit answer</button>
+                    <script type="text/javascript">
+                    document.getElementById("easySubmitButton3").onclick = function () {
+                        location.href = "#";
+                    }
+                    </script>
+                </p>
+            </div>
+        </div>
+
+  
+
+<!--button that takes you back to index.html-->
+    <button id="easyHomeButton">Take me home, Smithers!</button>
+            <script type="text/javascript">
+                document.getElementById("easyHomeButton").onclick = function () {
+                    location.href = "./index.html";
+                }
+                </script>
+    </div>
+    
+</body>
+</html>

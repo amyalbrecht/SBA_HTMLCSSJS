@@ -1,0 +1,58 @@
+html, body {
+    padding: 0;
+    margin: 0;
+    background-color: rgb(255, 217, 15);
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+  }
+
+
+#indexFlexBox {
+    display: flex;
+}
+
+#indexEasyChoice {
+    margin: 10%;
+    padding: 5%;
+    border: solid;
+    background-color: cornflowerblue;
+}
+
+#indexHardChoice {
+    margin: 10%;
+    padding: 5%;
+    border: solid;
+    background-color: rgb(209, 96, 96)
+}
+
+.questionBorder {
+    border: solid;
+    width: 75%;
+    margin: 10%;
+    padding: 5%;
+}
+
+table,
+td {
+    border: 1px solid #333;
+}
+
+thead,
+tfoot {
+    background-color: rgb(0, 47, 255);
+    color: #fff;
+}
+
+#easyQuestionGrimes {
+    text-align: left;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+#hardQuestionScrabble {
+    text-align: left;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+
